@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const projectsData = [
   {

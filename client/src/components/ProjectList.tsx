@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import { FaArrowDownLong, FaArrowRightLong, FaHandshakeSimple } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import {
   SiFlask,
   SiSqlite,
@@ -20,7 +20,6 @@ import {
   SiReact,
   SiAmazon,
   SiGooglegemini,
-  SiWhatsapp,
   SiExpress,
   SiVite
 } from "react-icons/si";

@@ -7,32 +7,19 @@ import { loadSlim } from "@tsparticles/slim";
 // import clear from '../assets/clear.png';
 import { FaDownload, FaSuitcase, FaJava } from "react-icons/fa";
 import { FaArrowDownLong, FaArrowRightLong, FaHandshakeSimple } from "react-icons/fa6";
-import { MdEmail, MdMailOutline, MdOutlineMailOutline, MdOutlineRemoveRedEye } from "react-icons/md";
+import { MdMailOutline, MdOutlineRemoveRedEye } from "react-icons/md";
 import { BiHappyBeaming } from "react-icons/bi";
 import { IoRocketSharp } from "react-icons/io5";
 import { GiFist } from "react-icons/gi";
 import { HiLightBulb } from "react-icons/hi";
 import {
-  SiFlask,
-  SiSqlite,
-  SiPytorch,
-  SiHuggingface,
-  SiStripe,
-  SiOpenai,
-  SiCloudinary,
   SiPython,
   SiHtml5,
   SiCss3,
   SiTailwindcss,
   SiJavascript,
-  SiScikitlearn,
-  SiFramer,
-  SiPostgresql,
   SiReact,
-  SiAmazon,
-  SiGooglegemini,
   SiWhatsapp,
-  SiVite
 } from "react-icons/si";
 
 import Project from '../components/ProjectList';
