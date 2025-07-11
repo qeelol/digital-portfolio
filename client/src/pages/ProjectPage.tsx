@@ -24,7 +24,7 @@ const AxifyProjectPage = () => {
           {axifyImages.map((img, i) => (
             <img
               key={i}
-              src={img}
+              src={`.${img}`}
               alt={`Axify event ${i+1}`}
               className="rounded-xl shadow-lg w-full max-w-xs border-2 border-purple-700"
             />

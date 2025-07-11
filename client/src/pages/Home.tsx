@@ -190,7 +190,7 @@ const Home = () => {
         <div className="hero flex gap-20 items-center justify-center">
           <div className="p-0.5 bg-gradient-to-r from-white via-[#80F9FF] to-[#4F9BFF] rounded-full">
             <div className="image-container bg-black rounded-full overflow-hidden h-80">
-              <img src='/clear.png' className="h-80 opacity-90 bg-black"></img>
+              <img src='./clear.png' className="h-80 opacity-90 bg-black"></img>
             </div>
           </div>
           <div className="flex flex-col gap-8 text-left">
@@ -322,7 +322,7 @@ const Home = () => {
           </h2>
           <div className="flex items-center gap-15 w-[80vw]">
             <div className="border border-gray-600">
-              <img src="/Nelson.png" className='scale-x-[-1] h-[60vh]'></img>
+              <img src="./Nelson.png" className='scale-x-[-1] h-[60vh]'></img>
             </div>
             <div>
               <p className="text-3xl font-bold mb-5">Nice to meet you! I'm Nelson Jonathan.</p>

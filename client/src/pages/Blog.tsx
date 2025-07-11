@@ -143,7 +143,7 @@ const Blog = () => {
                 onClick={() => setPopup(item)}
               >
                 <img
-                  src={item.img}
+                  src={`.${item.img}`}
                   alt={item.title}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -174,7 +174,7 @@ const Blog = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={popup.img}
+                src={`.${popup.img}`}
                 alt={popup.title}
                 className="w-full h-[24rem] object-cover rounded mb-6"
               />

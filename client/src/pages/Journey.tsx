@@ -62,7 +62,7 @@ const Journey = () => {
             <div className="relative w-full flex justify-center">
               <div className="absolute left-1/2 transform -translate-x-1/2 z-20">
                 <div className="p-4 w-30 h-30 flex justify-center rounded-full border-3 border-primary-dark bg-black">
-                  <img src={item.image} className="w-full h-full object-contain" alt="NYP Logo" />
+                  <img src={`.${item.image}`} className="w-full h-full object-contain" alt="NYP Logo" />
                 </div>
               </div>
 
