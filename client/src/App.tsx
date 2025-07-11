@@ -28,7 +28,7 @@ function ScrollToTop() {
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename='/digital-portfolio/'>
         <ScrollToTop />
         <Navbar />
         <Routes>
