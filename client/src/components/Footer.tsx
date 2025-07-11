@@ -1,4 +1,3 @@
-import React from "react";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiWhatsapp, SiLinkedin, SiInstagram, SiGithub } from "react-icons/si";
 import { FaExternalLinkAlt, FaGlobeAsia } from "react-icons/fa";

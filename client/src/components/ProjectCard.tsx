@@ -20,7 +20,6 @@ import {
   SiReact,
   SiAmazon,
   SiGooglegemini,
-  SiWhatsapp,
   SiFigma,
   SiVite
 } from "react-icons/si";
