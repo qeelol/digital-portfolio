@@ -9,7 +9,7 @@ const VelvetOasisHotelProjectPage = () => {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       className="flex flex-col gap-20 pt-40 pb-30 items-center px-10 bg-purple-900/30 relative"
     >
-      <div className="flex gap-2 absolute left-10 top-10 items-center cursor-pointer hover:text-purple-400 transition">
+      <div className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-purple-400 transition">
         <FaArrowLeftLong />
         Go Back
       </div>
@@ -32,7 +32,7 @@ const VelvetOasisHotelProjectPage = () => {
         </motion.div>
       </div>
       <div className="p-7 bg-black rounded-xl">
-        <img src="/projects/velvetoasis.png" className="max-h-[75vh]" alt="Velvet Oasis Hotel Project Screenshot" />
+        <img src="/digital-portfolio//projects/velvetoasis.png" className="max-h-[75vh]" alt="Velvet Oasis Hotel Project Screenshot" />
       </div>
       <div className="mt-6 max-w-[62vw]">
         <h2 className="text-3xl font-semibold text-purple-200 mb-2">

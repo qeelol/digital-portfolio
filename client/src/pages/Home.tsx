@@ -190,7 +190,7 @@ const Home = () => {
         <div className="hero flex gap-20 items-center justify-center">
           <div className="p-0.5 bg-gradient-to-r from-white via-[#80F9FF] to-[#4F9BFF] rounded-full">
             <div className="image-container bg-black rounded-full overflow-hidden h-80">
-              <img src='./clear.png' className="h-80 opacity-90 bg-black"></img>
+              <img src='/digital-portfolio//clear.png' className="h-80 opacity-90 bg-black"></img>
             </div>
           </div>
           <div className="flex flex-col gap-8 text-left">
@@ -210,9 +210,16 @@ const Home = () => {
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="bg-gradient-to-r from-[#109198] to-primary-dark p-4 px-8 rounded-lg 
-          flex gap-3 items-center cursor-pointer">
-            <FaDownload />Download CV
+            className="">
+            <a
+              className="bg-gradient-to-r from-[#109198] to-primary-dark p-4 px-8 rounded-lg 
+          flex gap-3 items-center cursor-pointer"
+          target='_blank'
+          rel='noopener noreferrer'
+          href="/digital-portfolio//resume.pdf"
+          >
+              <FaDownload />Download Resume
+            </a>
           </motion.div>
 
           <motion.div
@@ -259,7 +266,7 @@ const Home = () => {
                 "I worked together with Benny, Jun Hong, and Sean to create a marketplace for AI services.",
                 `What was initially "just another school project", soon became a business opportunity for us.`,
               ]}
-              image="/test.png"
+              image="/projects/axify.png"
               techStack={[
                 "Vite",
                 "React",
@@ -284,7 +291,7 @@ const Home = () => {
                 "I worked together with Benny, Femina, and Ryan to create a marketplace for AI services.",
                 `What was initially "just another school project", soon became a business opportunity for us.`,
               ]}
-              image="/rewwwind-1.png"
+              image="/projects/rewwwind.png"
               techStack={[
                 "Flask",
                 "HTML",
@@ -322,7 +329,7 @@ const Home = () => {
           </h2>
           <div className="flex items-center gap-15 w-[80vw]">
             <div className="border border-gray-600">
-              <img src="./Nelson.png" className='scale-x-[-1] h-[60vh]'></img>
+              <img src="/digital-portfolio//Nelson.png" className='scale-x-[-1] h-[60vh]'></img>
             </div>
             <div>
               <p className="text-3xl font-bold mb-5">Nice to meet you! I'm Nelson Jonathan.</p>

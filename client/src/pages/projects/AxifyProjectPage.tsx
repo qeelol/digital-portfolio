@@ -26,7 +26,7 @@ const AxifyProjectPage = () => {
       className="flex flex-col gap-20 py-40 pb-30 items-center px-10 bg-purple-900/30 relative"
     >
       <div 
-      className="flex gap-2 absolute left-10 top-10 items-center cursor-pointer hover:text-purple-400 transition"
+      className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-purple-400 transition"
       onClick={(e) => {
         e.stopPropagation();
         navigate('/projects')
@@ -56,7 +56,7 @@ const AxifyProjectPage = () => {
       </div>
 
       <div className="p-7 bg-black rounded-xl">
-        <img src="/projects/axify.png" className=" max-h-[75vh]"></img>
+        <img src="/digital-portfolio//projects/axify.png" className=" max-h-[75vh]"></img>
       </div>
 
       <div className="mt-6">
@@ -89,7 +89,7 @@ const AxifyProjectPage = () => {
             className="flex items-center gap-5 bg-purple-950/80 rounded-xl shadow-lg p-4 border-2 border-purple-700 flex-1 w-[60vw]"
           >
             <img
-              src={event.img}
+              src={`/digital-portfolio/${event.img}`}
               alt={event.title}
               className="rounded-xl max-w-100 mb-3 border border-purple-700"
             />
@@ -108,7 +108,7 @@ const AxifyProjectPage = () => {
         <h2 className="text-3xl font-semibold text-purple-200 mb-2">
           Tech Stack
         </h2>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 max-w-[62vw]">
           <span className="bg-purple-800 text-purple-200 px-4 py-2 rounded-full font-semibold">
             Vite
           </span>

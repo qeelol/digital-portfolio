@@ -11,7 +11,8 @@ const Navbar = () => {
 
   useEffect(() => {
     let state;
-    if (activePath === "/") state = 0;
+    // console.log(activePath);
+    if (activePath === "/digital-portfolio/") state = 0;
     else if (activePath.includes("/projects")) state = 1;
     else if (activePath.includes("/journey")) state = 2;
     else state = 3;

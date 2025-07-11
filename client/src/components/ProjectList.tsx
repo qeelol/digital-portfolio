@@ -69,7 +69,7 @@ const Project: React.FC<ProjectProps> = ({ title, date, desc, image, techStack }
     >
       <div className="flex gap-10 items-center w-full">
         <div className="flex-shrink-0">
-          <img src={image} className="w-130 border border-gray-600 rounded-xl"></img>
+          <img src={`/digital-portfolio/${image}`} className="w-130 border border-gray-600 rounded-xl"></img>
         </div>
         <div className="flex-1 flex flex-col gap-10 min-w-0 overflow-hidden">
           <div className="flex flex-col gap-1">

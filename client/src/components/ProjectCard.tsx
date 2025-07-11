@@ -123,7 +123,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, desc, image, filterLab
      }}
      >
       <div className="border border-gray-900 rounded-xl overflow-hidden relative">
-        <img src={image} className="max-h-45 w-full object-cover" />
+        <img src={`/digital-portfolio/${image}`} className="max-h-45 w-full object-cover" />
         <div className="flex gap-3 absolute bottom-6 left-[50%] -translate-x-1/2">
           {filterLabels.map(f => (
             <div key={f} className={`py-1 px-3 bg-gray-800 rounded-full border-2 ${colorClass.border} 

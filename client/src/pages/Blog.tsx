@@ -115,7 +115,7 @@ const blogSections: BlogSection[] = [
         title: "Comms & Personal Branding",
         date: "May 2025",
         desc: "A photo me and my team took with our Communications and Personal Branding lecturer, Mr. Lawrence.",
-      },
+      }
     ],
   },
 ];
@@ -143,7 +143,7 @@ const Blog = () => {
                 onClick={() => setPopup(item)}
               >
                 <img
-                  src={`.${item.img}`}
+                  src={`/digital-portfolio/${item.img}`}
                   alt={item.title}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
@@ -174,7 +174,7 @@ const Blog = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={`.${popup.img}`}
+                src={`/digital-portfolio/${popup.img}`}
                 alt={popup.title}
                 className="w-full h-[24rem] object-cover rounded mb-6"
               />

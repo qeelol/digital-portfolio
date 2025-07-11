@@ -9,7 +9,7 @@ const PortfolioProjectPage = () => {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       className="flex flex-col gap-20 pt-40 pb-30 items-center px-10 bg-blue-900/30 relative"
     >
-      <div className="flex gap-2 absolute left-10 top-10 items-center cursor-pointer hover:text-blue-400 transition">
+      <div className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-blue-400 transition">
         <FaArrowLeftLong />
         Go Back
       </div>
@@ -22,7 +22,7 @@ const PortfolioProjectPage = () => {
         </p>
       </div>
       <div className="p-7 bg-black rounded-xl">
-        <img src="/projects/portfolio.png" className="max-h-[75vh]" alt="Digital Portfolio Screenshot" />
+        <img src="/digital-portfolio//projects/portfolio.png" className="max-h-[75vh]" alt="Digital Portfolio Screenshot" />
       </div>
       <div className="mt-6">
         <h2 className="text-3xl font-semibold text-blue-200 mb-2">

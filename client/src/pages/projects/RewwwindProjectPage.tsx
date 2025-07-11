@@ -10,7 +10,7 @@ const RewwwindProjectPage = () => {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       className="flex flex-col gap-20 pt-40 pb-30 items-center px-10 bg-green-900/30 relative"
     >
-      <div className="flex gap-2 absolute left-10 top-10 items-center cursor-pointer hover:text-green-400 transition">
+      <div className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-green-400 transition">
         <FaArrowLeftLong />
         Go Back
       </div>
@@ -36,13 +36,13 @@ const RewwwindProjectPage = () => {
         </motion.div>
       </div>
       <div className="p-7 bg-black rounded-xl">
-        <img src="/projects/rewwwind.png" className="max-h-[75vh]" alt="Rewwwind Project Screenshot" />
+        <img src="/digital-portfolio//projects/rewwwind.png" className="max-h-[75vh]" alt="Rewwwind Project Screenshot" />
       </div>
       <div className="mt-6">
         <h2 className="text-3xl font-semibold text-green-200 mb-2">
           Tech Stack
         </h2>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 max-w-[62vw]">
           <span className="bg-green-800 text-green-200 px-4 py-2 rounded-full font-semibold">
             Flask
           </span>
