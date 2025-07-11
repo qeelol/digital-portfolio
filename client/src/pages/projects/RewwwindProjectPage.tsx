@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { SiGithub } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 
 const RewwwindProjectPage = () => {
+  const navigate = useNavigate();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,7 +12,12 @@ const RewwwindProjectPage = () => {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       className="flex flex-col gap-20 pt-40 pb-30 items-center px-10 bg-green-900/30 relative"
     >
-      <div className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-green-400 transition">
+      <div 
+      onClick={(e) => {
+        e.stopPropagation();
+        navigate("/projects");
+      }}
+      className="flex gap-2 absolute left-10 top-30 items-center cursor-pointer hover:text-green-400 transition">
         <FaArrowLeftLong />
         Go Back
       </div>
@@ -78,12 +85,79 @@ const RewwwindProjectPage = () => {
           </span>
         </div>
       </div>
+      <div className="mt-6 max-w-[62vw] text-green-100">
+        <h2 className="text-3xl font-semibold text-green-200 mb-6 text-center">
+          Design & Development Process
+        </h2>
+        <div className="flex flex-col gap-14">
+          <div>
+            <h3 className="text-2xl font-bold text-green-300 mb-4">1. Conceptualization & Planning</h3>
+            <ul className="list-disc pl-6 space-y-8 text-lg">
+              <li>
+                <span className="font-semibold text-green-200">Problem Identification:</span> Identified the niche for eco-friendly consumption within the vinyl and book communities, leading to the concept of a secondhand marketplace.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Defining Features:</span> Outlined core functionalities such as product listings, user accounts, search and filter options, and a secure payment gateway.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Technology Stack Selection:</span> Chose Flask for the backend due to its lightweight nature and Python's ecosystem, paired with HTML, CSS, and JavaScript for the frontend.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-green-300 mb-4">2. Database Design & API Development</h3>
+            <ul className="list-disc pl-6 space-y-8 text-lg">
+              <li>
+                <span className="font-semibold text-green-200">Data Modeling:</span> Designed the SQLite database schema to efficiently store user, product, order, and review information.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">RESTful API Endpoints:</span> Developed Flask API endpoints for user authentication, product management (CRUD operations), search, and checkout processes.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">External Integrations:</span> Integrated third-party APIs for image hosting (Cloudinary), payment processing (Stripe), and advanced features like AI Image Mapping (OpenAI, Huggingface, Pytorch).
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-green-300 mb-4">3. Frontend Implementation & UI/UX</h3>
+            <ul className="list-disc pl-6 space-y-8 text-lg">
+              <li>
+                <span className="font-semibold text-green-200">Static Page Development:</span> Built the core HTML and CSS structure for product listings, detail pages, user profiles, and the checkout flow.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Interactive Elements:</span> Implemented dynamic features using vanilla JavaScript for form validations, shopping cart functionality, and asynchronous data fetching.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Responsive Design:</span> Ensured the website was fully responsive, providing an optimal viewing experience across various devices and screen sizes.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-green-300 mb-4">4. Deployment & Continuous Improvement</h3>
+            <ul className="list-disc pl-6 space-y-8 text-lg">
+              <li>
+                <span className="font-semibold text-green-200">Deployment Strategy:</span> Deployed the Flask application to Render.com, configuring the necessary environment variables and build processes.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Version Control:</span> Managed codebase using Git and GitHub, facilitating collaborative development and tracking changes.
+              </li>
+              <li>
+                <span className="font-semibold text-green-200">Testing & Refinement:</span> Conducted thorough testing to identify and resolve bugs, ensuring a stable and user-friendly experience before public launch.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className="mt-6 max-w-[62vw]">
         <h2 className="text-3xl font-semibold text-green-200 mb-2">
           Reflection
         </h2>
         <p className="text-green-100 text-lg">
-          Rewwwind was a collaborative effort with Benny, Femina, and Ryan, to create a platform that encourages sustainable consumption and sharing of vinyl records and books. Working on this project allowed me to explore new technologies, work closely with a diverse team, and make a positive impact. It was a rewarding experience that deepened my appreciation for both technology and sustainability.
+          Rewwwind was a collaborative effort with Benny, Femina, and Ryan, to create a platform that encourages sustainable consumption and sharing of vinyl records and books. Working on this project allowed me to explore new technologies and make a positive impact. It was a rewarding experience that deepened my appreciation for both technology and sustainability.
         </p>
       </div>
       <motion.div
